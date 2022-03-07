@@ -6,12 +6,23 @@
     font-size: 25px;
 }
 
+.calculator_text {
+    color: white;
+    background-color: red;
+
+}
+
 .buttons {
     display: grid;
     border-bottom: 1px;
     border-left: 1px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.button {
+    color: red;
+}
+
 
 #equals {
     background-color: rgb(rgb(0, 255, 85), green, blue);

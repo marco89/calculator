@@ -10,7 +10,7 @@ buttons.map ( button => {
         // a switch statement finds the first case that matches the case parameters and then executes its code
         switch(e.target.innerText){
             case 'Clear All':
-                // when clear all button is pushed, an empty str is pushed to display
+                // when 'clear all button' is pushed, an empty str is pushed to display
                 display.innerText = '';
                 // the break statements stops the operation, ensuring the default case is not executed
                 break;
