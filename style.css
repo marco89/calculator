@@ -6,9 +6,9 @@
     font-size: 25px;
 }
 
-.calculator_text {
+.calculator_display {
     color: white;
-    background-color: red;
+    background-color: white;
 
 }
 
@@ -19,8 +19,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.equals {
+    background-color: green;
+}
+
 .button {
-    color: red;
+    color: white;
 }
 
 
