@@ -7,8 +7,11 @@
 }
 
 .calculator_display {
-    color: white;
+    color: black; /* Because white on white isn't that readable*/
     background-color: white;
+    max-width: 75vw; /* 75% of device's width, could be higher for mobile but let's leave that alone*/
+    /* I added "mx-auto" class, it's bootstrap shortcut for margin right and margin left set to auto, 
+    which results in centered element. mx is for margin on x axis. guess what "my-auto" does ... :) */
 
 }
 
