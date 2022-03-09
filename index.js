@@ -28,6 +28,34 @@ buttons.map ( button => {
                     display.innerText = 'Error';
                 }
                 break;
+            case '√':
+                try {
+                    display.innerText = Math.sqrt(display.innerText);
+                } catch {
+                    display.innerText = 'Error';
+                }
+                break;
+            case '²':
+                try {
+                    display.innerText = Math.pow(display.innerText, 2);
+                } catch {
+                    display.innerText = 'Error';
+                }
+                break;
+            case '³':
+            try {
+                display.innerText = Math.pow(display.innerText, 3);
+            } catch {
+                display.innerText = 'Error';
+            }
+            break;
+            // case 'Power ⒩':
+            // try {
+            //     display.innerText = Math.pow(display.innerText, display.innerText);
+            // } catch {
+            //     display.innerText = 'Error';
+            // }
+            // break;
             default:
                 // creates a default of pushing the value of the clicked button to the display
                 display.innerText += e.target.innerText;
