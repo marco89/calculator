@@ -10,18 +10,14 @@ buttons.map ( button => {
         // a switch statement finds the first case that matches the case parameters and then executes its code
         switch(e.target.innerText){
             case 'Clear All':
-                // when 'clear all button' is pushed, an empty str is pushed to display
                 display.innerText = '';
-                // the break statements stops the operation, ensuring the default case is not executed
                 break;
             case 'Delete':
-                // uses the slice method to remove the last clicked button only if display is populated
                 if(display.innerText){
                     display.innerText = display.innerText.slice(0, -1);
                 }
                 break;
             case '=':
-                // tries to evaluate the input equation and displays error upon failure
                 try {
                     display.innerText = eval(display.innerText);
                 } catch {
@@ -49,13 +45,13 @@ buttons.map ( button => {
                 display.innerText = 'Error';
             }
             break;
-            // case 'Power ⒩':
-            // try {
-            //     display.innerText = Math.pow(display.innerText, display.innerText);
-            // } catch {
-            //     display.innerText = 'Error';
-            // }
-            // break;
+            case 'x^y':
+            try {
+                display.innerText = display.innerText.concat('**');
+            } catch {
+                display.innerText = 'Error';
+            }
+            break;
             default:
                 // creates a default of pushing the value of the clicked button to the display
                 display.innerText += e.target.innerText;
